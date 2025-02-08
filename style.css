@@ -29,11 +29,18 @@ body {
   padding: 7px 0px;
   margin: 10px 0;
 }
+.top {
+  width: 100%;
+}
 
 .top p {
   color: hsl(30, 10%, 34%);
-  font-size: 16px;
+  font-size: 19px;
+  width: 100%;
+  display: block;
+  margin-bottom: 36px;
 }
+
 .preparation {
   background: #fff7fc;
   border-radius: inherit;
@@ -47,7 +54,8 @@ body {
   font-weight: 600;
 }
 .spaced-list,
-.ingredients-list,.instruction-list {
+.ingredients-list,
+.instruction-list {
   padding-left: 22px;
   line-height: 2rem;
 }
@@ -70,15 +78,18 @@ body {
   border-bottom: 1px solid #8f8a8a38;
 }
 .ingredients,
-.instruction h2 {
+.instruction,
+.nutrition h2 {
   font-family: "Young Serif", serif;
   font-weight: 400;
   color: hsl(14, 45%, 36%);
 }
-.ingredients ul,.instruction ol {
+.ingredients ul,
+.instruction ol {
   padding: 15px 0 7px 21px;
 }
-.ingredients-list,.instruction-list li {
+.ingredients-list,
+.instruction-list li {
   font-family: "Outfit", serif;
   padding-left: 23px;
 
@@ -86,10 +97,10 @@ body {
   color: hsl(30, 10%, 34%);
 }
 .ingredients-list li {
-    padding-left: 23px;
-    font-weight: 400;
-    color: hsl(30, 10%, 34%);
-  }
+  padding-left: 23px;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+}
 .ingredients-list li::marker {
   font-size: 12px;
   color: hsl(14, 45%, 36%);
@@ -98,4 +109,98 @@ body {
   font-size: 15px;
   font-weight: 600;
   color: hsl(14, 45%, 36%);
+}
+.nutrition {
+  padding: 17px 0px;
+}
+.nutrition p {
+  margin: 6px 0;
+  padding: 11px 0px;
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  font-family: "Outfit", serif;
+  padding: 0 35px;
+}
+td {
+  padding: 10px;
+  border-bottom: 1px solid #8f8a8a38;
+  color: hsl(30, 10%, 34%);
+  text-align: left;
+}
+table tr:last-child td {
+  border-bottom: none;
+}
+
+td strong {
+  color: hsl(14, 45%, 36%);
+  margin: 0 26px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .hero {
+    padding: 1rem;
+  }
+
+  .top h1 {
+    font-size: 1.5rem;
+  }
+
+  .top p {
+    font-size: 0.9rem;
+  }
+
+  .spaced-list li,
+  .ingredients-list li,
+  .instruction-list li {
+    font-size: 0.9rem;
+  }
+
+  .nutrition p {
+    font-size: 0.9rem;
+  }
+
+  td {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    margin-top: -4px;
+    padding: 1rem;
+  }
+
+  .top h1 {
+    font-size: 2rem;
+  }
+.top img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+  .top p {
+    font-size: 1rem;
+  }
+
+  .spaced-list li,
+  .ingredients-list li,
+  .instruction-list li {
+    font-size: 1rem;
+  }
+
+  .nutrition p {
+    font-size: 17px;
+  }
+
+  td {
+    font-size: 0.85rem;
+  }
 }
